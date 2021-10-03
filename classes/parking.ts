@@ -1,7 +1,7 @@
 import { Slot } from './slot';
 import { Car } from './car';
 
-class Parking {
+export class Parking {
     slots: Slot[];
     capacity: number;
     parkedCars: number;
