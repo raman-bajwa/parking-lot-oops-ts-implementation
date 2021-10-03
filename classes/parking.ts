@@ -2,9 +2,9 @@ import { Slot } from './slot';
 import { Car } from './car';
 
 export class Parking {
-    slots: Slot[];
-    capacity: number;
-    parkedCars: number;
+    private slots: Slot[];
+    public capacity: number;
+    private parkedCars: number;
 
     constructor(length: number){
         this.slots = [];
@@ -17,21 +17,21 @@ export class Parking {
         this.parkedCars = 0;
     }
 
-    parkCar(slotNumber: number, car: Car): void{
+    public parkCar(slotNumber: number, car: Car): void{
         this.slots[slotNumber - 1].setCar(car);
 
         this.parkedCars++;
     }
 
-    removeCar(slotNumber: number): void{
+    public removeCar(slotNumber: number): void{
         this.slots[slotNumber - 1].removeCar();
     }
 
-    getNumberOfParkedCars(): number{
+    public getNumberOfParkedCars(): number{
         return this.parkedCars;
     }
 
-    getNumberOfAvailbleSlots(): number{
+    public getNumberOfAvailbleSlots(): number{
         return this.capacity - this.parkedCars;
     }
 }
