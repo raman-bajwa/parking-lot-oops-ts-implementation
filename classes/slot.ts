@@ -4,7 +4,7 @@ export class Slot {
     public uid: number;
     private car: Car;
 
-    /** Sets uid of slot in creation. */
+    /** Sets uid of slot on creation. */
     constructor(uid: number) {
         this.uid = uid;
 
