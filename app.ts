@@ -1,12 +1,26 @@
 import { Parking } from './classes/parking';
 import { Car } from './classes/car';
 
+// create an parking with 10 slots for parking
 let parking = new Parking(10);
 
-// park an car
-parking.parkCar(1, new Car("xsd", "2007"));
+// print the capacity of park
+console.log('Park capacity: ', parking.capacity);
+ 
+// create a car
+const car1 = new Car("JH 40B 1762", "2007");
 
-// console.log(parking);
-console.log(parking.parkedCars);
-console.log(parking.getNumberOfParkedCars());
-console.log(parking.getNumberOfAvailbleSlots());
+// create an another car
+const car2 = new Car("JH 31T 4562", "2009");
+
+// park an first car
+parking.parkCar(1, car1);
+
+// park second car
+parking.parkCar(2, car2);
+
+// print the number of parked cars
+console.log('Parked Cars: ', parking.getNumberOfParkedCars());
+
+// print the number of availble slots
+console.log('Available slots: ', parking.getNumberOfAvailbleSlots());
