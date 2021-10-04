@@ -1,8 +1,8 @@
 import { Car } from './car';
 
 export class Slot {
-    uid: number;
-    car: Car;
+    public uid: number;
+    private car: Car;
 
     constructor(uid: number){
         this.uid = uid;
@@ -10,11 +10,11 @@ export class Slot {
         this.car = null;
     }
 
-    setCar(car: Car): void{
+    public setCar(car: Car): void{
         this.car = car;
     }
 
-    removeCar(): void{
+    public removeCar(): void{
         this.car = null;
     }
 }
