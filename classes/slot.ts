@@ -4,17 +4,34 @@ export class Slot {
     public uid: number;
     private car: Car;
 
-    constructor(uid: number){
+    /** Sets uid of slot in creation. */
+    constructor(uid: number) {
         this.uid = uid;
 
         this.car = null;
     }
 
-    public setCar(car: Car): void{
+    /**
+     * Parks an car
+     * @param {Car} car
+     * @returns void
+     */
+    public setCar(car: Car): void {
         this.car = car;
     }
 
-    public removeCar(): void{
+    /**
+     * Removes parked car
+     */
+    public removeCar(): void {
         this.car = null;
+    }
+
+    /**
+     * Returns currently parked car in it,
+     * @returns {Car}
+     */
+    public getParkedCar(): Car {
+        return this.car;
     }
 }
