@@ -18,8 +18,20 @@ export class Parking {
     }
 
     public parkCar(slotNumber: number, car: Car): void{
-        this.slots[slotNumber - 1].setCar(car);
 
+        // get current slot
+        let _slot = this.slots[slotNumber - 1];
+
+        // check if any car is already parked
+        if(_slot.getParkedCar()){
+            // if yes throw an Error
+            throw new Error(`Already occupied Slot`);
+        }
+
+        // park an car
+        _slot.setCar(car);
+
+        // increment the parked cars count
         this.parkedCars++;
     }
 
