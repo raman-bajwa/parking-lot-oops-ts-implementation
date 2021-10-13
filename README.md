@@ -7,10 +7,10 @@ npm install typescript -g
 
 ## To compile ts files
 ```
-tsc -p .
+npm build
 ```
 
 ## To run project files
 ```
-node build/app.js
+npm start
 ```
