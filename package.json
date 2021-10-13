@@ -1,0 +1,24 @@
+{
+  "name": "parking-lot-oops-ts-implementation",
+  "version": "1.0.0",
+  "description": "An typescript oops implementation of parking lot",
+  "main": "build/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raman-bajwa/parking-lot-oops-ts-implementation.git"
+  },
+  "keywords": [
+    "parking-lot",
+    "ts",
+    "oops"
+  ],
+  "author": "Raman Bajwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raman-bajwa/parking-lot-oops-ts-implementation/issues"
+  },
+  "homepage": "https://github.com/raman-bajwa/parking-lot-oops-ts-implementation#readme"
+}
