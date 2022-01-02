@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/raman-bajwa/parking-lot-oops-ts-implementation/issues"
   },
-  "homepage": "https://github.com/raman-bajwa/parking-lot-oops-ts-implementation#readme"
+  "homepage": "https://github.com/raman-bajwa/parking-lot-oops-ts-implementation#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
 }
