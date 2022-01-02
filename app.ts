@@ -1,5 +1,5 @@
-import { Parking } from './classes/parking';
-import { Car } from './classes/car';
+import { Parking } from './src/classes/parking';
+import { Car } from './src/classes/car';
 
 // create an parking with 10 slots for parking
 let parking = new Parking(10);
